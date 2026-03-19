@@ -1,0 +1,17 @@
+# Environment variables — NEVER upload your API key
+.env
+
+# Virtual environment — too large to upload
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# FAISS index — can be rebuilt by running indexing.py
+faiss_index/
+
+# OS files
+.DS_Store
+Thumbs.db
