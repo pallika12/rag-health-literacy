@@ -66,24 +66,5 @@ Pallika Kafle
 Bachelor of Engineering — Software Engineering
 Macquarie University, 2025
 Supervisor: Mr. Yipeng Zhou
-```
-
----
-
-## Step 6 — Create a requirements.txt file
-
-This lets anyone install all your libraries in one command. Create a file called `requirements.txt` and paste this in:
-```
-langchain
-langchain-openai
-langchain-community
-langchain-core
-langchain-text-splitters
-faiss-cpu
-openai
-tiktoken
-pypdf
-rank-bm25
-textstat
 streamlit
 python-dotenv
