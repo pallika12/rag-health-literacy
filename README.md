@@ -19,7 +19,7 @@ accessible to patients with low health literacy.
 - **Vector Database:** FAISS
 - **Search:** Hybrid BM25 + Vector Search
 - **Generative Model:** GPT-4o-mini
-- **Readability Validation:** textstat (FKGL + SMOG)
+- **Readability Validation:** pyphen (FKGL + SMOG)
 - **User Interface:** Streamlit
 
 ## Key Results
@@ -31,15 +31,24 @@ accessible to patients with low health literacy.
 ## How To Run
 
 1. Clone the repository
-2. Install dependencies:
+
+2. Create and activate a virtual environment:
+   python -m venv venv
+   venv\Scripts\activate
+
+3. Install dependencies:
    pip install -r requirements.txt
-3. Add your OpenAI API key to a .env file:
+
+4. Add your OpenAI API key to a .env file:
    OPENAI_API_KEY=your-key-here
-4. Add your PDF documents to the data/ folder
-5. Run the indexing pipeline:
+
+5. Add your PDF documents to the data/ folder
+
+6. Run the indexing pipeline:
    python indexing.py
-6. Launch the app:
-   streamlit run app.py
+
+7. Launch the app:
+   python -m streamlit run app.py
 
 ## Data Sources
 
